@@ -1,0 +1,109 @@
+html,
+body {
+    margin: 0;
+    width: 100%;
+}
+
+body {
+    margin: 90px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+    height: auto;
+    background-color: gray;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card {
+    width: 100%;
+    height: 450px;
+    box-sizing: border-box;
+    padding: 48px 48px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+}
+
+.card h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+}
+
+.card p {
+    font-weight: 200;
+    margin: 0;
+    line-height: 24px;
+}
+
+.card button {
+    border: none;
+    border-radius: 40px;
+    width: 60%;
+    height: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+}
+
+.orange {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.orange button {
+    color: hsl(31, 77%, 52%);
+}
+
+.cyan {
+    background-color: hsl(184, 100%, 22%)
+}
+
+.cyan button {
+    color: hsl(184, 100%, 22%)
+}
+
+
+.blue {
+    background-color: hsl(179, 100%, 13%)
+}
+
+.blue button {
+    color: hsl(179, 100%, 13%)
+}
+
+.card button:hover {
+    background-color: transparent;
+    border: white 2px solid;
+    color: white;
+    transition: .300s;
+}
+
+@media(width>1400px) {
+    body {
+        height: 100vh;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .panel {
+        flex-direction: row;
+        width: 922px;
+        height: 522px;
+    }
+
+    .card {
+        height: 100%;
+    }
+
+    .card button {
+        width: 70%;
+    }
+
+}
