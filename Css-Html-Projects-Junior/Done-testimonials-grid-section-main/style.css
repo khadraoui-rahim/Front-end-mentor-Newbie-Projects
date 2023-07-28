@@ -1,0 +1,203 @@
+html,
+body {
+    margin: 0;
+    width: 100%;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 70px 0;
+    background-color: #e5ebf3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+}
+
+.panel {
+    width: 330px;
+    height: auto;
+    display: grid;
+    gap: 25px;
+}
+
+.daniel,
+.jona {
+    box-sizing: border-box;
+    height: 450px;
+    border-radius: 9px;
+    background-color: hsl(263, 55%, 52%);
+    padding: 22px 28px;
+    display: grid;
+    grid-template-rows: 50px 160px 1fr;
+    position: relative;
+}
+
+.daniel-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.daniel-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: #a37ad7 2px solid;
+}
+
+.daniel-names div:nth-of-type(1) {
+    font-size: .8em;
+}
+
+.daniel-names div:nth-of-type(2) {
+    font-size: .7em;
+    opacity: .5;
+}
+
+.daniel-main {
+    font-size: 1.272em;
+    margin: 0;
+    margin-right: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.daniel-more {
+    font-size: .877em;
+    line-height: 18px;
+    margin: 0;
+    margin-right: 10px;
+    opacity: .7;
+    font-weight: 400;
+}
+
+.daniel-bg {
+    position: absolute;
+    top: 0;
+    right: 31px;
+    z-index: 1;
+}
+
+.jona {
+    background-color: hsl(217, 19%, 35%);
+    grid-template-rows: 50px 60px 1fr;
+    height: 240px;
+    gap: 5px;
+
+}
+
+.jona-more {
+    font-size: .8em;
+}
+
+.jona-info img {
+    border: hwb(0 100% 0% / 0.5) 2px solid;
+}
+
+.harmon {
+    color: hsl(217, 19%, 35%);
+    background-color: white;
+    height: 220px;
+    padding: 18px 28px;
+}
+
+.harmon-more {
+    color: hsla(217, 19%, 35%, .7);
+    font-weight: 500;
+}
+
+.patrick {
+    background-color: hsl(219, 29%, 14%);
+    height: 400px;
+    grid-template-rows: 50px 140px 1fr;
+}
+
+.patrick-more {
+    font-size: 0.85em;
+}
+
+.kira {
+    height: 460px;
+    grid-template-rows: 50px 60px 1fr;
+    gap: 10px;
+    background-color: white;
+}
+
+.kira-info img {
+    border: 2px solid white;
+}
+
+.kira-main {
+    font-weight: 600;
+}
+
+.kira-more {
+    font-size: .835em;
+}
+
+@media(width>1200px) {
+    body {
+        height: auto;
+        padding: 0;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .panel {
+        grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+        width: 1152px;
+        height: 585px;
+        box-shadow: 34px 0 34px -54px black
+    }
+
+    #daniel {
+        grid-area: 1 / 1 / 1 / span 2;
+        box-sizing: border-box;
+        height: 290px;
+        grid-template-rows: 51px 92px 1fr;
+    }
+
+    .daniel-bg {
+        right: 97px;
+    }
+
+    .daniel-info {
+        padding-bottom: 10px;
+    }
+
+    #jona {
+        height: 290px;
+        grid-template-rows: 51px 92px 1fr;
+        gap: 0;
+    }
+
+    #harmon {
+        height: 270px;
+        grid-template-rows: 51px 92px 1fr;
+        font-size: 1.04rem;
+    }
+
+    #kira {
+        grid-area: 1/4/span 2 /4;
+        height: 585px;
+        grid-template-rows: 51px 92px 1fr;
+        gap: 0;
+        padding: 22px 28px;
+    }
+
+    .kira-more {
+        font-size: .89em;
+    }
+
+    #patrick {
+        height: 270px;
+        grid-area: 2/2/2/span 2;
+        grid-template-rows: 51px 92px 1fr;
+
+    }
+
+
+}
