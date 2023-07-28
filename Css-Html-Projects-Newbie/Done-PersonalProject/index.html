@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="Start">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css">
+  <title>Results summary component</title>
+
+</head>
+
+<body class="Start center center-2 flex">
+  <main class="panel flex center">
+    <div class="panelScore flex center">
+      <div class="panelResult">Your Result</div>
+      <div class="panelCircle flex center center-2">
+        <div>76</div>
+        <div>of 100</div>
+      </div>
+      <div class="panelHeading">
+        Great
+      </div>
+      <p class="panelParagraph">
+        You scored higher than 65% of the <br class="hidden">
+        people who have taken these tests
+      </p>
+    </div>
+    <section id="firstpage" class="panel-summary-mother flex center">
+      <div class="panel-summary">
+        <div class="panel-summary-heading">Summary</div>
+        <button>Refresh</button>
+
+      </div>
+      <div id="one" class=" all flex center">
+        <img src="images/icon-reaction.svg" alt="">
+        Sunday <span class="panel-summary-results"> <span>80</span> / 100</span>
+      </div>
+      <div id="two" class=" panel-summary-memory all flex center">
+        <img src="images/icon-memory.svg" alt="">
+        Monday <span class="panel-summary-results"> <span>92</span> / 100</span>
+      </div>
+      <div id="three" class=" panel-summary-verbal all flex center">
+        <img src="images/icon-verbal.svg" alt="">
+        Tuesday <span class="panel-summary-results"> <span>61</span> / 100</span>
+      </div>
+      <div id="four" class=" all flex center">
+        <img src="images/icon-visual.svg" alt="">
+        Wednesday <span class="panel-summary-results"> <span>72</span> / 100</span>
+      </div>
+      <a>Continue</a>
+
+    </section>
+    <section id="secondpage" class="panel-summary-mother flex center hideit">
+      <div class="panel-summary">
+        <div class="panel-summary-heading">Summary</div>
+      </div>
+      <div id="five" class="panel-summary-reaction all flex center">
+        <img src="images/icon-reaction.svg" alt="">
+        Thursday <span class="panel-summary-results"> <span>80</span> / 100</span>
+      </div>
+      <div id="six" class="panel-summary-memory all flex center">
+        <img src="images/icon-memory.svg" alt="">
+        Friday <span class="panel-summary-results"> <span>92</span> / 100</span>
+      </div>
+      <div id="seven" class="panel-summary-verbal all flex center">
+        <img src="images/icon-verbal.svg" alt="">
+        Saturday <span class="panel-summary-results"> <span>61</span> / 100</span>
+      </div>
+      <div style="opacity: 0; margin: 0;" class="panel-summary-verbal all flex center">
+        <img src="images/icon-verbal.svg" alt="">
+        Saturday <span class="panel-summary-results"> <span>61</span> / 100</span>
+      </div>
+
+      <a>Continue</a>
+    </section>
+  </main>
+
+
+
+
+
+
+  <!--
+  Your Result
+  76
+  of 100
+
+  Great
+  You scored higher than 65% of the people who have taken these tests.
+
+  Summary
+
+  Reaction
+  80 / 100
+
+  Memory
+  92 / 100
+
+  Verbal
+  61 / 100
+
+  Visual
+  72 / 100
+
+  Continue
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  -->
+  <script src="app.js"></script>
+</body>
+
+</html>
