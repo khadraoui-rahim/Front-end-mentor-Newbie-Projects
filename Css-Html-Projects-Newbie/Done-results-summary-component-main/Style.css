@@ -1,0 +1,223 @@
+.Start {
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    align-items: center;
+}
+
+.center-2 {
+    justify-content: center;
+}
+
+.panel {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    flex-direction: column;
+}
+
+.panelScore {
+    background: linear-gradient(#7857ff, #2e2be9);
+    width: 100%;
+    height: calc(667px/2);
+    border-radius: 0 0 30px 30px;
+    flex-direction: column;
+}
+
+.panelResult {
+    color: hsla(241, 100%, 89%, 0.774);
+    font-size: 1rem;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.panelCircle {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.panelCircle div:nth-of-type(1) {
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+}
+
+.panelCircle div:nth-of-type(2) {
+    font-size: .9rem;
+    color: hsla(241, 100%, 89%, 0.603);
+    font-weight: 500;
+}
+
+.panelHeading {
+    font-size: 1.4rem;
+    color: white;
+    margin-top: 20px;
+}
+
+.panelParagraph {
+    width: 80%;
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.panel-summary {
+    width: 80%;
+    font-size: 1.2rem;
+    color: hsl(224, 30%, 27%);
+
+}
+
+.panel-summary-heading {
+    text-align: left;
+    padding: 23px 0;
+    font-weight: 700;
+}
+
+
+/* this is where the repeated text goes */
+.panel-summary,
+.all {
+    width: 80%;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.all img {
+    padding: 0 18px;
+}
+
+
+.panel-summary-results {
+    width: 100%;
+    text-align: right;
+    color: hsl(241, 100%, 89%);
+    padding-right: 15px;
+}
+
+.panel-summary-results span {
+    color: hsl(224, 30%, 27%);
+}
+
+.all {
+    height: 60px;
+    font-weight: 600;
+}
+
+/* this is where the repeated text goes */
+
+.panel-summary-reaction {
+    background-color: hsla(0, 100%, 67%, 0.055);
+    color: hsla(0, 100%, 67%, .8);
+}
+
+.panel-summary-memory {
+    background-color: hsla(39, 100%, 56%, 0.055);
+    color: hsla(39, 100%, 56%, .8);
+    margin: 13px 0;
+}
+
+.panel-summary-verbal {
+    background-color: hsl(166, 100%, 37%, 0.055);
+    color: hsla(166, 100%, 37%, .8);
+    margin: 13px 0;
+}
+
+.panel-summary-visual {
+    background-color: hsla(234, 85%, 45%, 0.055);
+    color: hsla(234, 85%, 45%, .8);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    width: 80%;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+a:hover {
+    background-color: hsla(224, 30%, 27%, 0.363);
+    transition: .5s;
+}
+
+.panel-summary-mother {
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+@media(width>1400px) {
+    .panel {
+        width: 700px;
+        height: 480px;
+        background-color: white;
+        flex-direction: row;
+        align-items: center;
+        box-shadow: 13px 24px 91px -67px hsl(224deg 93.33% 41.21%);
+        border-radius: 30px;
+    }
+
+    .panel-summary-mother {
+        padding-bottom: 0;
+        height: 100%;
+        border-radius: 0 30px 30px 0;
+    }
+
+    .panelScore {
+        height: 100%;
+        border-radius: 30px;
+    }
+
+    .panelCircle {
+        width: 190px;
+        height: 190px;
+    }
+
+    .panelCircle div:nth-of-type(1) {
+        font-size: 4.2rem;
+    }
+
+    .panelCircle div:nth-of-type(2) {
+        font-size: 1.3rem;
+    }
+
+    .panelResult {
+        font-size: 1.6rem;
+        padding-top: 30px;
+        padding-bottom: 16px;
+    }
+
+    .panelHeading {
+        font-size: 2rem;
+    }
+
+    .panelParagraph {
+        font-size: 1.1rem;
+        width: 67%;
+    }
+
+    .hidden {
+        display: none;
+    }
+}

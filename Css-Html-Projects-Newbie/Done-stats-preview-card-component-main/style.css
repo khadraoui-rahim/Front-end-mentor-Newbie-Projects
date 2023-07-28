@@ -1,0 +1,161 @@
+html,
+body {
+    font-size: 14px;
+    margin: 0;
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (height>780px) {
+    body {
+        height: 100vh;
+    }
+}
+
+
+
+#panel {
+    width: 337.5px;
+    display: flex;
+    position: relative;
+    background-color: hsl(244, 38%, 16%);
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    border-radius: 12px;
+    padding-bottom: 30px;
+    margin: 40px 0;
+}
+
+.img-container {
+    position: relative;
+}
+
+#panel .img {
+    background-image: url(images/image-header-mobile.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+#panel .img,
+.overlay {
+    width: 337.5px;
+    border-radius: 12px 12px 0 0;
+    z-index: 1;
+    height: 247.7px;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: hsl(277deg 75.26% 34.23% / 60%);
+}
+
+#panel h1 {
+    box-sizing: border-box;
+    padding: 30px;
+    font-weight: 700;
+    padding-bottom: 0;
+}
+
+#panel h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+.now {
+    display: none;
+}
+
+#panel p {
+    box-sizing: border-box;
+    padding: 0 43px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 26px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container h2 {
+    margin-bottom: 7px;
+    font-size: 23px;
+}
+
+.name {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+}
+
+@media(width>1250px) {
+
+    #panel {
+        flex-direction: row;
+        width: 1200px;
+        padding: 0;
+    }
+
+    .img-container {
+        display: none;
+    }
+
+    .bg-img,
+    .overlay {
+        border-radius: 0 12px 12px 0;
+        width: 540px;
+        height: 446px;
+        position: relative;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 106px;
+        width: 469px;
+    }
+
+    .contianerino {
+        height: 446px;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px;
+        margin-left: 42px;
+        gap: 5px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    #panel h1 {
+        text-align: left;
+        font-size: 42px;
+    }
+
+    .now {
+        display: block;
+    }
+
+    #panel p {
+        text-align: left;
+        padding: 0 30px;
+        padding-right: 157px;
+        font-size: 17px;
+    }
+}
